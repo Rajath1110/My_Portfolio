@@ -1,0 +1,54 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    padding: 15px 7%;
+}
+
+ul {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    margin: 0;
+    justify-content: space-evenly
+}
+
+.navbar li {
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.navbar a:visited {
+    color: var(--text-color); /* Ensures the color doesn't change after visiting */
+}
+
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active {
+    color: var(--text-color); /* Ensures the color doesn't change on hover, focus, or active state */
+    text-decoration: underline; /* Optionally, add underline on hover for better UX */
+}
+
+@media (max-width: 768px) {
+    .navbar li {
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar li {
+      font-size: 16px;
+      padding: 5px; /* Add padding for better spacing */
+    }
+  }

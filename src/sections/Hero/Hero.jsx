@@ -25,7 +25,7 @@ function Hero() {
         <img
           src={heroImg}
           className={styles.hero}
-          alt="Profile picture of Harris Johnsen"
+          alt="Profile picture of Rajath P"
         />
         <img
           className={styles.colorMode}
@@ -42,23 +42,22 @@ function Hero() {
         </h1>
         <h2>MERN Stack Developer</h2>
         <span>
-          <a href="https://twitter.com/" target="_blank">
-            <img src={twitterIcon} alt="Twitter icon" />
-          </a>
+          
           <a href="https://github.com/Rajath1110" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/in/rajath-p-36533b23a/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+        Hi! I'm a dedicated web developer with a passion for creating dynamic and user-friendly web applications.
         </p>
-        <a href={CV} download>
-          <button className="hover">Resume</button>
-        </a>
+        <div className="button-container">
+          <a href={CV} download><button className="hover">View</button></a>
+          <a href={CV} download><button className="hover">Download</button></a>
+        </div>
+
       </div>
     </section>
   );
